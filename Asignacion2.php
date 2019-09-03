@@ -108,9 +108,9 @@ if(!in_array($_SESSION['idEmpleado'], $barrio) ){
 
 
 
-	document.querySelector('#recargar').addEventListener('click', TraemeEsta)
+	document.querySelector('#recargar').addEventListener('click', Traerdata)
 
-	function TraemeEsta(argument) {
+	function Traerdata(argument) {
 		let perrito = document.querySelector("#loader");
 		if (perrito.style.display == 'none' && perrito.classList == 'cargado') {
 			perrito.style.display = 'none';
@@ -265,7 +265,7 @@ if(!in_array($_SESSION['idEmpleado'], $barrio) ){
 
 		fetch(ruta, PeticionFetch).then(response => response.json().then(datos => alert(datos)).catch(error => console.log(error))).catch(error => console.log(error));
 		//Para actualizar cuando asignas registros
-		TraemeEsta();
+		Traerdata();
 
 
 	}
@@ -301,7 +301,7 @@ if(!in_array($_SESSION['idEmpleado'], $barrio) ){
 
 		fetch(ruta, peticionFETCH).then(response => response.json().then(datos => alert(datos)).catch(error => console.log(error))).catch(error => console.log(error));
 		//Para actualizar cuando mueves registros
-		TraemeEsta();
+		Traerdata();
 	}
 
 
