@@ -1,0 +1,10 @@
+<?php 
+
+function base(){
+	return ;
+
+}
+
+
+
+ ?>

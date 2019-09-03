@@ -1,0 +1,64 @@
+:root {
+	--color1: #3F5666;
+	--color2: #212121;
+	--color5: #F8CA4D;
+	--colorbg1: #212121;
+	--colorbg2: #263238;
+	--fondo: #eee;
+}
+
+body{
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.tablaform{
+	width: 100%;
+	border-collapse: collapse;
+	margin: 10px 10px 100px 10px;
+	box-sizing: border-box;
+}
+
+.tablaform thead{
+	background: var(--colorbg1);
+	color: white;
+	text-transform: uppercase;
+}
+
+.tablaform  tr, .tablaform  td{
+	border: solid 1px var(--colorbg1);
+	padding: 5px;
+}
+
+.tablaform th{
+	padding: 0px 5px;
+}
+
+.tablaform > tr > td > strong{
+	text-transform: uppercase;
+
+}
+
+.acciones {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 75%;
+	margin-bottom: 10px;
+}
+
+.acciones div {
+	display: flex;
+}
+
+.acciones label {
+	display: flex;
+	flex-direction: column;
+	margin-right: 20px;
+}
+
+.main-cont {
+	width: 90%;
+	display: flex;
+	flex-direction: column-reverse;
+}
